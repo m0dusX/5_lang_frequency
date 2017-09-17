@@ -9,9 +9,9 @@ def load_text_lowercase(filepath):
 
 
 def get_most_frequent_words(text):
-    frequency = {}
+    word_rank = 10
     words = re.findall(r'\w+', text)
-    frequency_tuplelist = Counter(words).most_common(10)
+    frequency_tuplelist = Counter(words).most_common(word_rank)
     return frequency_tuplelist
 
 
